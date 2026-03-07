@@ -25,10 +25,13 @@ int main(){
                 arr[iterator] = num;
                 iterator += 1;
             }
-            
+
             // Pass the array of numbers and its size to assembly
             int asmVal = sum(arr, size);
             printf("Sum from Assembly: %d\n", asmVal);
+        }
+        else{
+            printf("Empty file...\n");
         }
         fclose(file);
     }
